@@ -21,19 +21,16 @@ namespace InsertionSort
 
             int i, j, temp;
 
-            for (i = 0; i < size - 1; i++)
+            for (i = 1; i < size; i++)
             {
-                for (j = 0; j < size - 1; j++)
+                temp = arr[i];
+
+                for (j = i; j > 0 && More(arr[j - 1], temp); j--)
                 {
-                    while (More(arr[j], arr[j + 1]))
-                    {
-                        temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                    }
+                    arr[j] = arr[j - 1];
                 }
+                arr[j] = temp;
             }
         }
-
     }
 }

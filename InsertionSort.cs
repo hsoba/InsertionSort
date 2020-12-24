@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace InsertionSort
 {
-    class Program
+    // This class will use the insertion sort algorithm to sort
+    // an integer array in ascending order
+    public class InsertionSort
     {
-        static void Main(string[] args)
-        {
-            int[] exampleArray = new int[] { 342, 242, 235, 64, 474, 3, 100, 2 };
-        }
+
     }
 }
